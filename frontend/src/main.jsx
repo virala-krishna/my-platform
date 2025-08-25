@@ -16,6 +16,9 @@ import MobileDevelopmentPath from './MobileDevelopmentPath';
 import TraceFilter from './TraceFilter';
 import TraceCoding from './TraceCoding';
 import TraceAlgorithms from './TraceAlgorithms';
+import ProjectsFilter from './ProjectsFilter';
+import BuildProjects from './BuildProjects';
+import RefactorCode from './RefactorCode';
 
 import './index.css'
 import './app.css'
@@ -32,6 +35,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/trace" element={<TraceFilter />} />
         <Route path="/trace/coding" element={<TraceCoding />} />
         <Route path="/trace/algorithms" element={<TraceAlgorithms />} />
+        <Route path="/projects" element={<ProjectsFilter />} />
+        <Route path="/projects/build-projects" element={<BuildProjects />} />
+        <Route path="/refactor" element={<RefactorCode />} />
         
         {/* Individual Course Pages */}
         <Route path="/learn/html-css-fundamentals" element={<HTMLCourse />} />
